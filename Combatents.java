@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Combatents {
-    ArrayList<Equip> equips;
+    private ArrayList<Equip> equips;
 
     public Combatents() {
         equips = new ArrayList<>();

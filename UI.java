@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UI {
-    public static Scanner entrada = new Scanner(System.in);
+    private static Scanner entrada = new Scanner(System.in);
 
     public static Personatge escollirOponent(Personatge atacant, ArrayList<Personatge> personatges) {
         System.out.println(atacant.getNom() + ", atent!");
