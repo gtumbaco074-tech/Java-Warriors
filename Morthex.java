@@ -4,7 +4,7 @@ public class Morthex extends Personatge {
         super(nom, equip);
     }
 
-    public void atacar(Personatge oponent) {
+    public void ferAccio(Personatge oponent) {
         int malTotal = 0;
 
         for (int i = 0; i < 5; i++) {
