@@ -21,5 +21,6 @@ public class PokoMoko extends Personatge{
         }
 
         super.rebreMal(malAcabat);
+
     }
 }
