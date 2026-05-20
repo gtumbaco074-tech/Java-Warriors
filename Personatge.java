@@ -62,6 +62,17 @@ public abstract class Personatge {
             return("mort");
         }
     }
+    public void curar(int quantitat) {
+        if (estaViu) {
+            vidaActual = vidaActual + quantitat;
+
+            if (vidaActual > VIDA_INICIAL) {
+                vidaActual = VIDA_INICIAL;
+            }
+
+            UI.mostrarCura(this, vidaActual);
+        }
+    }
 
     public String getNom() {
         return nom;

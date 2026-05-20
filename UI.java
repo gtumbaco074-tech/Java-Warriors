@@ -8,7 +8,11 @@ public class UI {
         System.out.println();
         System.out.println("És el torn de " + atacant.getNom());
         mostrarPersonatgesIVida(personatges);
-        System.out.println(atacant.getNom() + ", escull a qui vols atacar:");
+        if (atacant instanceof CuranderoGerald) {
+            System.out.println(atacant.getNom() + ", escull a qui vols atacar o curar:");
+        } else {
+            System.out.println(atacant.getNom() + ", escull a qui vols atacar:");
+        }
         int escollit = entrada.nextInt();
         return personatges.get(escollit-1);
     }
@@ -37,5 +41,9 @@ public class UI {
         System.out.println("Estadístiques finals:");
         mostrarPersonatgesIVida(personatges);
         System.out.println("Gràcies per jugar.");
+    }
+
+    public static void mostrarCura(Personatge Curandero, int vidaActual) {
+        System.out.println(Curandero.getNom() + " es cura i ara té " + vidaActual + " de vida.");
     }
 }
